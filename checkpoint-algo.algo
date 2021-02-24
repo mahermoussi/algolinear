@@ -1,0 +1,29 @@
+ALGORITHM checkpoint
+VAR
+     sentence : STRING
+     words : INTEGER :=1
+     char : INTEGER
+     vowels : INTEGER
+    set_declarations
+BEGIN
+   BEGIN
+         read (sentence)
+         char :=sentence.length
+    END
+    FOR  (i=0 ;i<=char; i++)
+         IF (sentence[i]:=" ") THEN
+          words++
+
+    END_IF
+
+
+    END_FOR
+    FOR   (i=0 ;i<=char; i++) DO
+    IF if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') THEN
+    vowels++
+        
+    END_IF
+        
+    END_FOR
+
+END
